@@ -24,12 +24,12 @@ function App() {
 
   return (
     <div className='flex flex-col justify-center items-center py-12 px-24 space-y-24'>
-      <div>
+      <div className='w-full'>
         <input type='input'
           placeholder='Search for movies...'
           value={searchTerm}
           onChange={onChange}
-          className='h-12 border-0 focus:border-0' />
+          className='h-12 border-0 w-full rounded px-6 bg-gray-700 shadow-md' />
       </div>
 
       <MovieContainer movies={result.Search} />
