@@ -8,7 +8,7 @@ function App() {
   // 41cf69d2&s
   const API_URL = 'http://www.omdbapi.com/?apikey=41cf69d2&s=';
 
-  const [searchTerm, setSearchTerm] = useState('batman');
+  const [searchTerm, setSearchTerm] = useState('');
   const [result, setResult] = useState([]);
 
   const onChange = async e => {
